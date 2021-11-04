@@ -12,40 +12,40 @@ const sonoroH3Blue = TextStyle(
   fontFamily: "Roboto",
   fontSize: 20.0,
   fontWeight: FontWeight.w400,
-  color: secondaryColor,
+  color: episode333Color,
 );
 
 const sonoroH2Blue = TextStyle(
   fontFamily: "Roboto",
   fontSize: 17.0,
   fontWeight: FontWeight.w500,
-  color: secondaryColor,
+  color: episode666Color,
 );
 
 const sonoroH1Blue = TextStyle(
   fontFamily: "Roboto",
   fontSize: 15.0,
   fontWeight: FontWeight.w500,
-  color: secondaryColor,
+  color: episode666Color,
 );
 
 const sonoroH4Black = TextStyle(
   fontFamily: "Roboto",
   fontSize: 25.0,
   fontWeight: FontWeight.w400,
-  color: textColor,
+  color: episodef8Color,
 );
 
 const sonoroH2Black = TextStyle(
   fontFamily: "Roboto",
   fontSize: 16.0,
   fontWeight: FontWeight.w400,
-  color: textColor,
+  color: episodef8Color,
 );
 
 const sonoroH1Black = TextStyle(
   fontFamily: "Roboto",
   fontSize: 14.0,
   fontWeight: FontWeight.w400,
-  color: textColor,
+  color: episode333Color,
 );

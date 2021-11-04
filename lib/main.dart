@@ -1,5 +1,17 @@
-import 'package:dogswelove/views/dogslist.dart';
+import 'package:dogswelove/constants.dart';
+import 'package:dogswelove/views/dogslistpage.dart';
 import 'package:flutter/material.dart';
+
+ThemeData theme() {
+  return ThemeData(
+    scaffoldBackgroundColor: episodef8Color,
+    // fontFamily: "Roboto",
+    visualDensity: VisualDensity.adaptivePlatformDensity,
+    primaryColor: episode666Color,
+    accentColor: episode333Color,
+    // errorColor: episode666Color,
+  );
+}
 
 void main() {
   runApp(const MyApp());
@@ -13,9 +25,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Dogs We Love',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      debugShowCheckedModeBanner: false,
+      theme: theme(),
       home: const DogsListPage(),
     );
   }

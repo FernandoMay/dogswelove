@@ -1,5 +1,7 @@
+import 'package:dogswelove/constants.dart';
 import 'package:dogswelove/controllers/services.dart';
 import 'package:dogswelove/models/dog.dart';
+import 'package:dogswelove/views/components/card.dart';
 import 'package:flutter/material.dart';
 
 class DogsListPage extends StatefulWidget {
@@ -23,7 +25,11 @@ class _DogsListPageState extends State<DogsListPage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text(""),
+        backgroundColor: episodef8Color,
+        title: const Text(
+          "Dogs We Love",
+          style: H1Black,
+        ),
       ),
       body: Center(
         child: FutureBuilder<List<Dog>>(
@@ -34,19 +40,17 @@ class _DogsListPageState extends State<DogsListPage> {
               return ListView.builder(
                   itemCount: data!.length,
                   itemBuilder: (BuildContext context, int index) {
-                    return Container(
-                      height: 75,
-                      color: Colors.white,
-                      child: Center(
-                        child: Text(data[index].dogName),
-                      ),
+                    return DogCard(
+                      dog: data[index],
                     );
                   });
             } else if (snapshot.hasError) {
               return Text("${snapshot.error}");
             }
             // By default show a loading spinner.
-            return CircularProgressIndicator();
+            return const CircularProgressIndicator(
+              color: episode666Color,
+            );
           },
         ),
       ),
